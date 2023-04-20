@@ -4,11 +4,12 @@ package {
 }
 
 android_app {
-    name: "Provision",
+    name: "KioskProvision",
     srcs: ["**/*.java"],
     platform_apis: true,
     system_ext_specific: true,
     certificate: "platform",
+    overrides: ["Provision"],
     privileged: true,
     required: ["privapp_whitelist_com.android.provision"],
     optimize: {
